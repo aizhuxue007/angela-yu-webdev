@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: rgba(102, 118, 138, 1);
+    --dark-blue: rgba(22, 31, 42 ,1);
+    --off-white: rgba(235, 235, 236, 1);
+    --white: rgba(255, 255, 255, 1);
+    --black: rgba(45, 46, 48, 1);
+}
+
+body {
+    text-align: center;
+}
+
+.hero {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+nav {
+    height: 15dvh;
+}
+
+nav > * {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+nav > a {
+    float: right;
+}
+
+nav a:link {
+    color: var(--white);
+}
+
+nav a:visited {
+    color: lightblue;
+}
+
+.hero-intro {
+    padding: 3.5em;
+}
+
+ul li a {
+    float: left;
+}
+
+a {
+    margin-left: 1em;
+}
+
+.section-p {
+    padding: 3em 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cards {
+    background: var(--off-white);
+    padding: 2.5em;
+}
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card + .card {
+    margin-top: 2em;
+}
+
+footer {
+    background: var(--dark-blue);
+}
+
+.socials {
+    width: 30%;
+    height: 8dvh;
+    margin: 0 auto;
+}
+
+.socials li {
+    width: 33.3333%;
+    float: left;
+    padding: 0 auto;
+}
+
+.socials li a {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.socials li a:visited {
+    color: lightblue;
+}
