@@ -125,7 +125,7 @@ h1 + p {
     color: lightblue;
 }
 
-ul li a {
+header ul li a {
     float: left;
 }
 
@@ -249,6 +249,11 @@ i {
 }
 
 @media screen and (min-width: 900px) {
+    .floats {
+        background: var(--off-white);
+        height: 60dvh;
+    }
+
     .card {
         width: 50%;
         float: left;
@@ -263,3 +268,12 @@ i {
         width: 80%;
     }
 }
+
+footer i {
+    margin-top: 2em;
+}
+
+footer ul li {
+    margin: 1em 0;
+}
+
