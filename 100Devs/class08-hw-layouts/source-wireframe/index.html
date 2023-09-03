@@ -1,32 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Source</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <!-- <div class="logo"></div>
-            <ul>
-                <li>First Link</li>
-                <li>Second Link</li>
-                <li>Third Link</li>
-                <li>Fourth Link</li>
-                <a href="">Button</a>
-            </ul> -->
-            <i class="hamburger"></i>
-            <div class="logo">Source</div>
+            <div class="desktop-nav">
+                <!-- <div class="logo"></div>
+                <ul>
+                    <li>First Link</li>
+                    <li>Second Link</li>
+                    <li>Third Link</li>
+                    <li>Fourth Link</li>
+                </ul> -->
+                <!-- <a href="">Button</a> -->
+            </div>
+
+            <div class="mobile-nav">
+            
+                <a href="#">
+                    <img src="./assets/source/icons8-hamburger-50.png" alt="hamburger menu icon">
+                </a>
+                <div class="logo-container">
+                    Source
+                </div>
+                
+            </div>
         </nav>
     </header>
-    <span>Tagline</span>
-    <h1>Source helps creators do more of what they love</h1>
-    <form action="">
-        <input type="text" placeholder="placeholder">
-    </form>
-    <a href="">Button</a>
-    <p>A device that enables collaboration will lessen the chance of work having to be completely redone</p>
-    <img src="" alt="laptop mobile combo">
+
+    <main class="hero container">
+        <span class="tagline">Tagline</span>
+        <h1>Source helps creators do more of what they love</h1>
+        <form action="">
+            <input class="input" type="text" placeholder="Placeholder">
+        </form>
+        <a class="cta input">Button</a>
+        <p>A device that enables collaboration will lessen the chance of work having to be completely redone</p>
+        <div class="img-container--center">
+            <a
+            href="https://www.vectorstock.com/royalty-free-vector/realistic-electronic-devices-computer-monitors-vector-33676926">
+                <img class="responsive-img" src="./assets/source/responsive/vectorstock_33676926/vectorstock_33676926.png"
+                    alt="laptop mobile combo">
+             </a>
+        </div>
+       
+    </main>
+
+    <section class="product-features container">
+        <figure>
+            <img src="./assets/source/icons8-button-50.png" alt="button icon">
+            <h3>Feature one</h3>
+            <p>In such a test, the user performs realistic takes by interacting with the paper prototype</p>
+            <a href="#">First link <span><img class="greater-than-icon" src="./assets/source/icons8-greater-than-60.png" alt="greater than icon"></span></a>
+        </figure>
+        <figure>
+            <img src="./assets/source/icons8-diamond-50.png" alt="diamond icon">
+            <h3>Feature two</h3>
+            <p>In such a test, the user performs realistic takes by interacting with the paper prototype</p>
+            <a href="#">Second link <span><img class="greater-than-icon" src="./assets/source/icons8-greater-than-60.png" alt="greater than icon"></span></a>
+        </figure>
+        <figure>
+            <img src="./assets/source/icons8-waning-gibbous-50.png" alt="waning gibbous icon">
+            <h3>Feature three</h3>
+            <p>In such a test, the user performs realistic takes by interacting with the paper prototype</p>
+            <a href="#">Third link <span><img class="greater-than-icon" src="./assets/source/icons8-greater-than-60.png" alt="greater than icon"></span></a>
+        </figure>
+        <figure>
+            <img src="./assets/source/icons8-drop-50.png" alt="droplet icon">
+            <h3>Feature four</h3>
+            <p>In such a test, the user performs realistic takes by interacting with the paper prototype</p>
+            <a href="#">Fourth link <span><img class="greater-than-icon" src="./assets/source/icons8-greater-than-60.png" alt="greater than icon"></span></a>
+        </figure>
+    </section>
+    <section class="product-details container">
+        <figure>
+            <h2>Collecting information about the problem</h2>
+            <p>In the context of information architecture. Information is separate from both knowledge and data, and
+                lies nebulously between them.</p>
+        </figure>
+    </section>
 </body>
+
 </html>
