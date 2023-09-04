@@ -26,7 +26,9 @@ a:visited {
 
 nav a,
 nav a:link,
-nav a:visited {}
+nav a:visited {
+    color: white;
+}
 
 li {
     float: left;
