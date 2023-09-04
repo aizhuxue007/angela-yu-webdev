@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    width: 5rem;
+    height: 3rem;
+    margin: 0 4em;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 9px;
+    right: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 0.55em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:link,
+a:visited {
+    color: rgba(20, 75, 238, 1);
+}
+
+nav {
+    border-bottom: 1px solid lightgray;
+    height: 10dvh;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+select {
+    background: white;
+    color: rgba(20, 75, 238, 1);
+    border: none;
+}
+
+form > a {
+    position: relative;
+}
+
+.hero__img-container {
+    width: 80%;
+    max-width: 700px;
+    overflow: hidden;
+}
+
+.hero__img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+nav li + li {
+    margin-left: 1em;
+}
+.search-icon {
+    position: absolute;
+    bottom: -7px;
+    right: 4px;
+}
+
+option {
+    color:rgba(20, 75, 238, 1);
+}
+
+input {
+    background: lightgray;
+    outline: none;
+    border: none;
+    padding: 0.5em 1em;
+}
+
+input::placeholder {
+    color:rgba(20, 75, 238, 1)
+}
+
+nav * {
+    display: inline-block;
+}
+
+.hero__img-container {
+
+}
+
+.hero__info,
+.text-center {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero__info a {
+    background: rgba(20, 75, 238, 1);
+    color: white;
+    border-radius: 5px;
+    padding: 1em 1.5em;
+}
+
+.hero__info ul li {
+    margin: 3em 0;
+}
+
+.why {
+    background: lightgray;
+    padding: 3em;
+}

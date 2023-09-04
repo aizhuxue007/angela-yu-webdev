@@ -17,11 +17,15 @@ body {
     background: var(--light);
 }
 
-a:link,
-a:visited {
+.desktop:link,
+.desktop:visited {
     color: var(--dark);
     text-decoration: none;
     font-weight: 700;
+}
+
+.desktop-nav {
+    display: none;
 }
 
 .mobile-nav {
@@ -118,4 +122,115 @@ figure:last-child {
 
 figure h2 {
     margin: 2.5em 0 0.75em 0;
+}
+
+@media screen and (min-width: 700px) {
+    .desktop-nav {
+        display: block;
+        padding: 3em;
+        border-bottom: 2px solid var(--light-blue);
+    }
+
+    .logo {
+        float: left;
+        font-size: 2rem;
+        position: relative;
+        bottom: 0.5em;
+    }
+
+    .desktop-nav a:link,
+    .desktop-nav a:visited {
+        text-decoration: none;
+        color: var(--dark);
+    }
+
+    body > header > nav > div.desktop-nav > a:link,
+    body > header > nav > div.desktop-nav > a:visited {
+        color: var(--white);
+    } 
+
+    .desktop-nav ul {
+        list-style-type: none;
+        float: left;
+        position: relative;
+        left: 2em;
+    }
+
+    .desktop-nav a:hover {
+        color: var(--light-blue);
+    }
+
+    .desktop-nav li {
+        float: left;
+    }
+
+    .desktop-nav li + li {
+        margin-left: 1.5em;
+    }
+
+    .desktop-nav li:last-child {
+        margin-right: 1.5em;
+    }
+
+    .tagline {
+        margin-top: 3em;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .cta-btn,
+    .cta-bta a,
+    .cta-bta a:link,
+    .cta-bta a:visited {
+        float: right;
+        padding: 0.5em 1.2em;
+        position: relative;
+        color: white;
+        bottom: 2em;
+        border-radius: 10px;
+        top: -10px;
+    }
+
+    .hero {
+        clear: both;
+    }
+
+    .hero section {
+        width: 40%;
+        float: left;
+        margin-left: 2em;
+    }
+
+    .img-container--center{
+        width: 55%;
+        float: right;
+        position: relative;
+        top: 400px;
+    }
+
+    body > section.product-features.container {
+        clear: both;
+    }
+
+    .cta {
+        display: inline-block;
+        width: 100px;
+    }
+    
+   .product-features > figure {
+        width: 25%;
+        float: left;
+    }
+
+    .product-details figure {
+        clear: both;
+        background: var(--white);
+    }
+    
+
+    .product-details figure{
+        padding: 2em;
+    }
 }

@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+}
+
+nav {
+    background: black;
+}
+
+nav ul {
+    list-style: none;
+    color: white;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+nav a,
+nav a:link,
+nav a:visited {}
+
+li {
+    float: left;
+}
+
+nav ul {
+    margin-left: 1em;
+}
+
+nav > img {
+    width: 8rem;
+}
+
+.nav-actions {
+    width: 85%;
+    display: inline-block;
+}
+
+nav li {
+    height: 100%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0 0.5em;
+
+}
+
+.container {
+    padding: 0 1em;
+}
+
+main {
+    color: white;
+}
+
+.header-info {
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.5em 0 0.15em 0;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.header-info::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    /* Create a block-level pseudo-element to push the spans apart */
+}
+
+.header-info span {
+    display: inline-block;
+    text-align: left;
+}
+
+.header-info span:first-child {
+    margin-right: auto;
+    /* Push the first span to the left */
+}
+
+.header-info span:last-child {
+    margin-left: auto;
+    /* Push the last span to the right */
+}
+
+main {
+    height: 50dvh;
+}
+
+main * {
+    clear: both;
+}
+
+.main-article {
+    width: 48%;
+    height: 60vh;
+    background-image: url("https://imgs.search.brave.com/RoJDQ_C4nZgjS_uwMrkWS9jmERlKP5u5YWsdz03LFPU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L25ld3MvOTc2L2Nw/c3Byb2RwYi8xNjc2/RC9wcm9kdWN0aW9u/L18xMTM5MzEwMjlf/Y29tcG9zaXRlLmpw/Zw");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1em;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.four-figures {
+    height: 50dvh;
+    float: left
+}
+
+.img-bg {
+    width: 50%;
+    float: left;
+}
+
+.tag-bar {
+    border-left: 3px solid red;
+    height: 1px;
+}
+
+.img-background-1 {
+    background: url("https://imgs.search.brave.com/TjOyOOzeUy336crgRxpzCuEBth0AjbWTB8Luu1kZbSk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hcGku/YXJteS5taWwvZTIv/Yy9pbWFnZXMvMjAy/My8wOC8wOS8yOGIz/ZWIzYS9vcmlnaW5h/bC5qcGc");
+}
+
+.img-background-2 {
+    background: url("https://imgs.search.brave.com/cks2Y5-JCNVHrw52-uziUHDcqXkAkVALi-EOc2UrTW8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI5/MDQwMjY1OC9waG90/by92aWFsLW9mLWNv/cm9uYXZpcnVzLXZh/Y2NpbmUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPUkyWURr/VDM3SEtCRmkxT0Vu/QXpmVC1kM1U0YUFY/T3NLb2pDV2Z6VlNo/czQ9");
+}
+
+.img-background-3 {
+    background: url("https://imgs.search.brave.com/fhgS8EqiZtTMGwszBLEQH_lRCEEnDHWh62h15GCNDoI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dmVyeXdlbGxmaXQu/Y29tL3RobWIvRmdD/ODR6bFlJT1NLSllm/bXcxN1JaaHlZV0Iw/PS80MDB4MjUwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L1ByaW1hcnlfSW1h/Z2UtYzcyMmRiYWRh/ZDE5NGE5YzlmNGY4/YWIzYmYxYmI2MTgu/anBn");
+}
+
+.img-background-4 {
+    background: url("https://imgs.search.brave.com/qyP2CWlx4M1hFBP3DLGH41mKAob-Z85YjJnw4dahGIA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly95Y2hl/Zi5maWxlcy5iYmNp/LmNvLnVrLzk3Nng1/NDkvcDA4bmNjbnku/anBn");
+}
+
+body > section {
+    clear: both;
+}
+
+.article-img {
+    height: 40dvh;
+}
+
+.article-img img {
+    width: 100%;
+    height: 100%;
+}
+section > article {
+    width: 33.3333%;
+    float: left;
+}

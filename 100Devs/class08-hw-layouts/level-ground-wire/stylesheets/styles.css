@@ -84,8 +84,8 @@ nav > a {
     color: white;
 }
 
-a:link {
-    color: var(--white);
+a {
+    color: white;
 }
 
 a:visited {
