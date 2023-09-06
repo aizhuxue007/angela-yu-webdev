@@ -138,6 +138,7 @@ li {
 
 .menu {
     padding: 5em;
+    height: 150dvh;
 }
 
 .menu a {
@@ -155,4 +156,35 @@ li {
 .mb-span {
     display: inline-block;
     margin-bottom: 0.75em;
+}
+
+.menu:nth-child(4) {
+    clear: both;
+}
+
+.card {
+    width: 20%;
+    height: 50dvh;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    /* clear: both; */
+    float: left;
+}
+
+
+.food-1 {
+    background-image: url('atharva-tulsi-unsplash-food1.jpeg');
+}
+
+.food-2 {
+    background-image: url('mae-mu-unsplash-food2.jpeg');
+}
+
+.food-3 {
+    background-image: url('mae-mu-unsplash-food3.jpeg');
+}
+
+.food-4 {
+    background-image: url('farhad-ibrahimzade-unsplash-food4.jpeg');
 }
