@@ -99,3 +99,20 @@ li a:focus {
     width: 100%;
     height: 100%;
 }
+
+td {
+    vertical-align: top;
+}
+
+td img {
+    width: 10rem;
+    height: 10rem;
+}
+
+td h2 {
+    margin-bottom: 1em;
+}
+
+td {
+    padding: 1em;
+}

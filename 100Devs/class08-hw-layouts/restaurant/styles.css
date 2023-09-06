@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #FB7307;
+}
+
+.container {
+    padding: 0 5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header {
+    background-image: url('anna-pelzer-unsplash-hero.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100dvh;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: rgba(5, 5, 5, 1);
+    font-weight: 700;
+}
+
+a:hover {
+    color: orange;
+}
+
+header nav ul,
+.action-icons {
+    display: inline-block;
+}
+
+.action-icons {
+    margin-left: 1em;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.action-icons ul {
+   vertical-align: bottom;
+}
+
+li + li {
+    margin-left: 1em;
+}
+
+li {
+    float: left;
+}
+
+.hero,
+.about-us,
+.specialty {
+    clear: both;
+}
+
+.hero {
+    margin-top: 10em;
+}
+
+.hero-info {
+    width: 55%;
+    max-width: 700px;
+}
+
+.hero-info h1 {
+    margin-bottom: 1em;
+}
+
+.hero-info form {
+    margin-bottom: 1.2em;
+}
+
+.hero-info input,
+.hero-info button {
+    margin: 0;
+    padding: 0.6em 1em;
+}
+
+.hero-info button {
+    background: var(--orange);
+    border: none;
+    color: white;
+}
+
+
+.socials li {
+}
+
+.socials img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 50%;
+}
+
+.nav-right {
+    float: right;
+}
+
+.about-us {
+    background-image: url('brooke-lark-unsplash-breakfast-white.jpeg');
+    background-size: cover;
+    padding: 5em;
+    position: relative;
+}
+
+.about-us h2 {
+    margin-bottom: 1em;
+}
+
+.about-us p {
+    margin-bottom: 1.5em;
+}
+
+.about-us a:link,
+.about-us a:visited {
+    margin-top: 3em;
+    color: white;
+    background: var(--orange);
+    border-radius: 10px;
+    padding: 0.6em 1em;
+}
+
+.about-us svg {
+    position: absolute;
+}
+
+.menu {
+    padding: 5em;
+}
