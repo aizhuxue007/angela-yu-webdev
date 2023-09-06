@@ -22,13 +22,14 @@ header {
     background-image: url('anna-pelzer-unsplash-hero.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
     height: 100dvh;
 }
 
 a:link,
 a:visited {
     text-decoration: none;
-    color: rgba(5, 5, 5, 1);
+    color: white;
     font-weight: 700;
 }
 
@@ -49,7 +50,7 @@ header nav ul,
 }
 
 .action-icons ul {
-   vertical-align: bottom;
+    vertical-align: bottom;
 }
 
 li + li {
@@ -67,12 +68,13 @@ li {
 }
 
 .hero {
-    margin-top: 10em;
+    margin-top: 2em;
 }
 
 .hero-info {
     width: 55%;
     max-width: 700px;
+    height: 80dvh;
 }
 
 .hero-info h1 {
@@ -93,10 +95,6 @@ li {
     background: var(--orange);
     border: none;
     color: white;
-}
-
-
-.socials li {
 }
 
 .socials img {
@@ -122,7 +120,7 @@ li {
 }
 
 .about-us p {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.25em;
 }
 
 .about-us a:link,
@@ -131,7 +129,7 @@ li {
     color: white;
     background: var(--orange);
     border-radius: 10px;
-    padding: 0.6em 1em;
+    padding: 0.6em 2em;
 }
 
 .about-us svg {
@@ -140,4 +138,21 @@ li {
 
 .menu {
     padding: 5em;
+}
+
+.menu a {
+    color: black;
+}
+
+.menu li {
+    margin-top: 1em;
+}
+
+.orange-text {
+    color: var(--orange);
+}
+
+.mb-span {
+    display: inline-block;
+    margin-bottom: 0.75em;
 }
