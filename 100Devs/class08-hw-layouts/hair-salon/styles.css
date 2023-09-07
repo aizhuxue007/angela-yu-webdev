@@ -53,17 +53,17 @@ a:visited {
 }
 
 .hero {
-    height: 90dvh;
+    height: 150dvh;
     background-image: url('https://ayeshastyles.netlify.app/img/header-background.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-
+    position: relative;
 }
 
 .hero__info {
     position: relative;
-    top: 30%;
+    top: 50px;
     width: 50%;
     max-width: 900px;
     color: rgba(5, 6, 7, 1)
@@ -104,6 +104,7 @@ figure img {
 
 .momentum {
     background: rgba(240, 240, 240, 1);
+    height: 150dvh;
 }
 
 .container {
@@ -239,4 +240,100 @@ figure img {
     position: absolute;
     bottom: 0;
     right: 50%;
+}
+
+.lookbook h3 {
+    margin-top: 2em;
+}
+
+.models {
+    width: 30%;
+    height: 100dvh;
+    float: left;
+    margin-top: 2em;
+}
+
+.models-left {
+  margin-right: 1em;
+}
+
+.models-center {
+margin-right: 1em;
+}
+
+.models-right {
+
+}
+
+.girl-1 {
+    width: 100%;
+    height: 100px;
+    background-image: url('	https://cdn.discordapp.com/attachments/942114234605666344/942156987490267196/lookbook1.png');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+
+.girl-2 {
+    width: 100%;
+    height: 200px;
+    background-image: url('	https://cdn.discordapp.com/attachments/942114234605666344/942156986668175400/lookbook2.png');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+
+.girl-3 {
+    width: 100%;
+    height: 100px;
+    background-image: url('https://cdn.discordapp.com/attachments/942114234605666344/942156986282303508/lookbook3.png');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+
+.girl-4 {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://cdn.discordapp.com/attachments/942114234605666344/942156987221807105/lookbook4.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.girl-5 {
+    width: 100%;
+    height: 200px;
+    background-image: url('	https://cdn.discordapp.com/attachments/942114234605666344/942156985858662420/lookbook6.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.lookbook_plus {
+    width: 100%;
+    height: 100px;
+    background: black;
+    color: white;
+    position: relative;
+}
+
+.plus {
+    position: absolute;
+    font-size: 4em;
+    /* bottom: 50%; */
+    right: 35%;
+}
+
+@media screen and (min-width: 700px) {
+    .employee {
+        width: 30%;
+        height: 100dvh;
+    }
+    .employee + .employee {
+        margin-left: 1em;
+    }
+
+    .services figure {
+        width: 30%;
+        float: left;
+    }
 }
