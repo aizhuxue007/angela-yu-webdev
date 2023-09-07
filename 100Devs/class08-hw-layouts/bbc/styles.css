@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
 ul {
     padding: 0;
 }
@@ -16,6 +25,11 @@ nav {
 nav ul {
     list-style: none;
     color: white;
+}
+
+a > img {
+    width: 25px;
+    height: 25px;
 }
 
 a,
@@ -97,9 +111,6 @@ main {
     height: 50dvh;
 }
 
-main * {
-    clear: both;
-}
 
 .main-article {
     width: 48%;
@@ -122,12 +133,14 @@ main * {
 
 
 .four-figures {
+    width: 45%;
     height: 50dvh;
     float: left
 }
 
 .img-bg {
-    width: 50%;
+    width: 35%;
+    height: 100px;
     float: left;
 }
 
@@ -138,6 +151,9 @@ main * {
 
 .img-background-1 {
     background: url("https://imgs.search.brave.com/TjOyOOzeUy336crgRxpzCuEBth0AjbWTB8Luu1kZbSk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hcGku/YXJteS5taWwvZTIv/Yy9pbWFnZXMvMjAy/My8wOC8wOS8yOGIz/ZWIzYS9vcmlnaW5h/bC5qcGc");
+    background-position: center;
+    background-size: cover;
+    margin: 0 2em 0.5em 0;
 }
 
 .img-background-2 {
@@ -167,4 +183,8 @@ body > section {
 section > article {
     width: 33.3333%;
     float: left;
+}
+
+.news {
+    margin-top: 3em;
 }
