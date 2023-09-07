@@ -145,6 +145,7 @@ a {
 .cards {
     background: var(--off-white);
     padding: 2.5em;
+    height: 100dvh;
 }
 
 .card {
