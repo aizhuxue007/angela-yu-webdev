@@ -5,6 +5,26 @@
     box-sizing: border-box;
 }
 
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+nav {
+    padding: 1em 1.25em;
+}
+
+nav a:link,
+nav a:visited {
+    color: black;
+    background: none;
+    font-weight: 600;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -15,9 +35,208 @@ li {
     margin: 0 1.25em;
 }
 
+.third {
+    width: 30%;
+}
+
+.logo {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 1.5em;
+}
+
 a:link,
 a:visited {
     color: white;
+    padding: 0.75em 1.2em;
     background: black;
     text-decoration: none;
+}
+
+.hero {
+    height: 90dvh;
+    background-image: url('https://ayeshastyles.netlify.app/img/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+
+.hero__info {
+    position: relative;
+    top: 30%;
+    width: 50%;
+    max-width: 900px;
+    color: rgba(5, 6, 7, 1)
+}
+
+.hero h1 {
+    text-align: left;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 100;
+    margin-bottom: 0.222em;
+}
+
+.hero p {
+    font-weight: 200;
+    letter-spacing: 0.45rem;
+    margin-bottom: 2.5em;
+}
+
+.services {
+    padding: 4em 0;
+}
+
+figure {
+    float: left;
+    text-align: center;
+}
+
+.services * {
+    margin-bottom: 0.4em;
+}
+
+figure img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1.1em;
+}
+
+.momentum {
+    background: rgba(240, 240, 240, 1);
+}
+
+.container {
+    width: 75%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.momentum {
+    padding: 4em 0;
+}
+
+.momentum__col {
+    width: 45%;
+    height: 50dvh;
+    float: left;
+}
+
+.momentum div + div {
+    margin-left: 2em;
+}
+
+.momentum__info * {
+    margin-bottom: 0.45em;
+}
+
+.momentum h2 {
+    font-weight: 200;
+}
+
+.momentum p {
+    margin-bottom: 2em;
+}
+
+.img {
+    background-size: cover;
+    background-position: center;
+}
+
+.momentum__video {
+    background-image: url('https://ayeshastyles.netlify.app/img/momentum.JPG');
+}
+
+.employees {
+    padding: 4em 0;
+}
+
+.employee {
+    width: 75%;
+    height: 150dvh;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+/* .employee + .employee {
+    margin-left: 2em;
+} */
+
+.staff-card1 {
+    background-image: url('https://ayeshastyles.netlify.app/img/alita-williams.JPG');
+}
+
+.staff-card2 {
+    background-image: url('https://ayeshastyles.netlify.app/img/ayesha-lake.JPG');
+}
+
+.staff-card3 {
+    background-image: url('https://ayeshastyles.netlify.app/img/michelle-smith.JPG');
+}
+
+.staff__info {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 0.75em 0;
+}
+
+.staff__info * {
+    text-transform: uppercase;
+}
+
+.staff__info h2 {
+    font-size: 2.3rem;
+}
+
+.staff__info p {
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.promo {
+    background: center/cover no-repeat url("https://ayeshastyles.netlify.app/img/banner.JPG");
+    /* margin: 4vh 0; */
+    aspect-ratio: calc(16/9);
+    position: relative;
+}
+
+.promo__info {
+    position: absolute;
+    top: 50%;
+}
+
+.promo h2 {
+    margin-bottom: 1em;
+    font-size: 0.75rem;
+}
+
+.promo p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+.promo span {
+    font-weight: 600;
+}
+
+.promo__container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.lookbook {
+    text-align: center;
+    position: relative;
+    height: 100dvh;
+}
+
+.lookbook a {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
 }

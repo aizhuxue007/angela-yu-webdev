@@ -4,106 +4,133 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hair Salon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">
-            <img src="" alt="ayesha logo">
-        </div>
         <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>SERVICES</li>
-            <li>LOOKBOOK</li>
-            <li>NEWS</li>
-            <li>CONTACT</li>
-            <li>
-                <img src="" alt="search">
-            </li>
-            <li>
-                <img src="" alt="bag">
-            </li>
+          <li><span class="logo">Ayesha</span></li>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>SERVICES</li>
+          <li>LOOKBOOK</li>
+          <li>NEWS</li>
+          <li>CONTACT</li>
+          <li>
+            <img src="icons8-search-24.png" alt="search" />
+          </li>
+          <li>
+            <img src="icons8-bag-24.png" alt="bag" />
+          </li>
         </ul>
         <div class="cta">
-            <a class="btn book-order" href="">BOOK ONLINE</a>
+          <a class="btn book-order" href="">BOOK ONLINE</a>
         </div>
       </nav>
-      <div class="hero">
-        <h1>BLONDE & HIGHLIGHT</h1>
-        <p>DIVIDE YOUR UNIQUENESS BY YOUR HAIR IN STYLE</p>
-        <a href="" class="btn">OUR SERVICES</a>
-      </div>
-      <section class="services">
-        <figure>
-          <img src="" alt="salon lady graphic" />
-          <h3>EXPERT BEAUTICIANS</h3>
-          <p>
-            Beauty Experts duke Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Aliquid, ipsum.
-          </p>
-        </figure>
-        <figure>
-          <img src="" alt="salon chair graphic" />
-          <h3>EXPERT BEAUTICIANS</h3>
-          <p>
-            Beauty Experts duke Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Aliquid, ipsum.
-          </p>
-        </figure>
-        <figure>
-          <img src="" alt="cream bottle graphic" />
-          <h3>EXPERT BEAUTICIANS</h3>
-          <p>
-            Beauty Experts duke Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Aliquid, ipsum.
-          </p>
-        </figure>
-      </section>
-      <section class="video-description">
-        <h2>MAKE YOUR OWN MOMENTUM</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          rem sequi officiis possimus necessitatibus tenetur nostrum aliquam
-          iure in deserunt, blanditiis, error architecto minus dolores pariatur
-          rerum quos quod ea illum. Placeat assumenda nesciunt fugiat itaque
-          explicabo quasi nemo aut.
-        </p>
-        <a href="" class="btn">READ MORE</a>
-      </section>
-      <section class="staff">
-        <div class="staff-cards">
+      <main class="hero clearfix">
+        <div class="container">
+            <section class="hero__info clearfix">
+                <h1>BLONDE & HIGHLIGHT</h1>
+                <p>DIVIDE YOUR UNIQUENESS BY YOUR HAIR IN STYLE</p>
+                <a href="" class="btn">OUR SERVICES</a>
+              </section>
+        </div>
+        
+      </main>
+      <section class="services clearfix">
+        <div class="container">
           <figure>
-            <img src="" alt="alita williams" />
-            <div class="staff-info"></div>
+            <img src="icons8-woman-expert-24.png" alt="salon lady graphic" />
+            <h3>EXPERT BEAUTICIANS</h3>
+            <p>
+              Beauty Experts duke Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Aliquid, ipsum.
+            </p>
           </figure>
           <figure>
-            <img src="" alt="ayesha lake" />
-            <div class="staff-info"></div>
+            <img src="icons8-barber-chair-24.png" alt="salon chair graphic" />
+            <h3>EXPERT BEAUTICIANS</h3>
+            <p>
+              Beauty Experts duke Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Aliquid, ipsum.
+            </p>
           </figure>
           <figure>
-            <img src="" alt="smith mitcheell" />
-            <div class="staff-info"></div>
+            <img src="icons8-beauty-product.png" alt="cream bottle graphic" />
+            <h3>EXPERT BEAUTICIANS</h3>
+            <p>
+              Beauty Experts duke Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Aliquid, ipsum.
+            </p>
           </figure>
         </div>
       </section>
-      <aside class="promo">
-        <h4>COLOUR DAY OFFER!</h4>
-        <p><span>-10%</span> ON HAIRCUT COLOR AND HIGHLIGHT</p>
+      <section class="momentum clearfix">
+        <div class="container">
+          <div class="momentum__info momentum__col">
+            <h2>MAKE YOUR OWN MOMENTUM</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate rem sequi officiis possimus necessitatibus tenetur
+              nostrum aliquam iure in deserunt, blanditiis, error architecto
+              minus dolores pariatur rerum quos quod ea illum. Placeat assumenda
+              nesciunt fugiat itaque explicabo quasi nemo aut.
+            </p>
+            <a href="" class="btn">READ MORE</a>
+          </div>
+          <div class="momentum__video momentum__col img"></div>
+        </div>
+      </section>
+      <section class="employees clearfix">
+        <div class="staff-cards clearfix container">
+          <figure class="employee staff-card1 img">
+            <div class="staff__info">
+              <h4>Alita Williams</h4>
+              <p>Colourist</p>
+            </div>
+          </figure>
+          <figure class="employee staff-card2 img">
+            <div class="staff__info">
+              <h4>Ayesha Lake</h4>
+              <p>Styler</p>
+            </div>
+          </figure>
+          <figure class="employee staff-card3 img">
+            <div class="staff__info">
+              <h4>Michelle Smith</h4>
+              <p>Beautician</p>
+            </div>
+          </figure>
+        </div>
+      </section>
+      <aside class="promo clearfix">
+        <div class="promo__container">
+          <div class="promo__info">
+            <h4>COLOUR DAY OFFER!</h4>
+            <p><span>-10%</span> ON HAIRCUT <br>COLOR AND HIGHLIGHT</p>
+            <a href="" class="btn">BOOK APPOINTMENT</a>
+          </div>
+        </div>
       </aside>
-      <section class="lookbook">
+      <section class="lookbook clearfix">
         <h3>OUR LOOKBOOK</h3>
         <div class="line-separator"></div>
         <div class="lookbook__container">
-            <div class="lookbook__card"></div>
-            <div class="lookbook__card"></div>
-            <div class="lookbook__card"></div>
-            <div class="lookbook__card"></div>
-            <div class="lookbook__card"></div>
-            <div class="lookbook__card">
-                <a href="">+</a>
-            </div>
+          <div class="lookbook__card girl-1"></div>
+          <div class="lookbook__card girl-2"></div>
+          <div class="lookbook__card girl-3"></div>
+          <div class="lookbook__card girl-4"></div>
+          <div class="lookbook__card girl-5"></div>
+          <div class="lookbook__card girl-6">
+            <a href="">+</a>
+          </div>
         </div>
       </section>
     </header>
