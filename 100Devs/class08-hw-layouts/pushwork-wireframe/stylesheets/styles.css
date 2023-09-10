@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 88%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 10dvh;
+    padding: 1em 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+li:first-of-type {
+    margin-right: 45dvw;
+}
+
+li + li {
+    margin-left: 1em;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
