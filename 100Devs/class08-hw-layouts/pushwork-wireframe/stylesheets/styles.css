@@ -5,15 +5,40 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dark-blue: rgba(32, 37, 51, 1);
+    --light-gray: rgba(226, 228, 235, 1);
+    --dark-gray: rgba(61, 65, 78, 1);
+}
+
 .container {
     width: 88%;
     max-width: 1000px;
     margin: 0 auto;
 }
 
+header {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
 nav {
     height: 10dvh;
     padding: 1em 0;
+    text-transform: uppercase;
+}
+
+.btn {
+    padding: 0.5em 1em;
+}
+
+.hero {
+    margin-top: 3em;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
 }
 
 ul {
