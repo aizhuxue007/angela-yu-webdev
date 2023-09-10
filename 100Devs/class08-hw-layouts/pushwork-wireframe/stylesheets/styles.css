@@ -30,10 +30,25 @@ nav {
 
 .btn {
     padding: 0.5em 1em;
+    border-radius: 10px;
+}
+
+nav li:nth-child(7) {
+    margin-right: 1em;
+}
+
+nav li:last-of-type {
+    margin: 0;
+}
+
+.btn-signup {
+    background-color: var(--dark-gray);
+    color: white;
 }
 
 .hero {
     margin-top: 3em;
+    padding: 1em 0 3em 0;
 }
 
 a:link,
@@ -51,7 +66,7 @@ nav li {
 }
 
 li:first-of-type {
-    margin-right: 45dvw;
+    margin-right: 20dvw;
 }
 
 li + li {

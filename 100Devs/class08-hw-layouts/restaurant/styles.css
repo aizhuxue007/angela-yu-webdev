@@ -138,7 +138,6 @@ li {
 
 .menu {
     padding: 5em;
-    height: 150dvh;
 }
 
 .menu a {
@@ -163,13 +162,14 @@ li {
 }
 
 .card {
-    width: 20%;
-    height: 50dvh;
+    width: 23%;
+    height: 40dvh;
     border-radius: 10px;
     background-size: cover;
     background-position: center;
     /* clear: both; */
     float: left;
+    margin-left: 1em;
 }
 
 
@@ -187,4 +187,13 @@ li {
 
 .food-4 {
     background-image: url('farhad-ibrahimzade-unsplash-food4.jpeg');
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
