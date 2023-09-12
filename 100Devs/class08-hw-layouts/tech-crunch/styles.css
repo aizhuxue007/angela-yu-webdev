@@ -117,4 +117,16 @@ td {
     padding: 1em;
 }
 
-
+@media screen and (max-width: 768px) {
+    main figure {
+        width: 100%;
+        float: none;
+        margin: 2em 0;
+    }
+    
+    main section {
+        width: 100%;
+        float: none;
+        margin: 2em 0;
+    }
+}
