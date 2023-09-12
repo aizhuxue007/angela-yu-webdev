@@ -43,7 +43,7 @@ a:visited {
 
 nav {
     border-bottom: 1px solid lightgray;
-    height: 10dvh;
+    height: 20dvh;
     text-align: center;
     margin-bottom: 5em;
 }
@@ -126,4 +126,20 @@ nav * {
 .why {
     background: lightgray;
     padding: 3em;
+}
+
+@media (min-width: 768px) {
+    main {
+        height: 170dvh;
+    }
+
+    .hero__img-container {
+        width: 45%;
+        float: left;
+    }
+
+    .hero__info {
+        width: 45%;
+        float: left;
+    }
 }
