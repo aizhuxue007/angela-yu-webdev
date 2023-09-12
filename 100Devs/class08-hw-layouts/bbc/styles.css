@@ -217,5 +217,6 @@ section > article {
     .four-figures {
         float: none;
         width: 100%;
+        margin: 2em 0;
     }
 }

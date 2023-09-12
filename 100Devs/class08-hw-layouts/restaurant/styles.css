@@ -197,3 +197,12 @@ li {
     line-height: 0;
     height: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        height: 50dvh;
+        float: none;
+        margin: 2em 0;
+    }
+}
