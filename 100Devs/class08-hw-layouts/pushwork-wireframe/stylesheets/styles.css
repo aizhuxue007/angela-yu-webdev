@@ -374,3 +374,25 @@ footer ul li a:link,
 footer ul li a:visited {
     color: black;
 }
+
+@media (min-width: 900px) {
+    .ltd {
+        float: left;
+    }
+    .products {
+        float: left;
+    }
+    .users {
+        float: left;
+    }
+    .information {
+        float: left;
+    }
+    .resources {
+        float: left;
+    }
+
+    .half-container {
+        float: left;
+    }
+}
