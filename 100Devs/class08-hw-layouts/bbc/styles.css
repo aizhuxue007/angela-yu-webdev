@@ -207,3 +207,15 @@ section > article {
 .news {
     margin-top: 4em;
 }
+
+@media screen and (max-width: 768px) {
+    .main-article {
+        float: none;
+        width: 100%;
+    }
+
+    .four-figures {
+        float: none;
+        width: 100%;
+    }
+}
