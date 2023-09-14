@@ -1,20 +1,15 @@
-document.querySelector('#check').addEventListener('click', check)
+const dayInput = document.getElementById('day')
+const checkBtn = document.getElementById('check').addEventListener('click', run)
+const outputH2 = document.getElementById('placeToSee')
 
+function run() {
+  let day = dayInput.value.toLowerCase()
 
-function check() {
-  const day = document.querySelector('#day').value
-  const output = document.querySelector('#placeToSee')
-  //Conditionals go here
-  // hw make this not case-sensitive
-
-  if (day.toLowerCase() === "Tuesday".toLowerCase() || day.toLowerCase() === "Thursday".toLowerCase()) {
-    output.innerHTML = "CLASS TIME!"
-  } else if (day.toLowerCase() === "Saturday".toLowerCase() || day.toLowerCase() === "Sunday".toLowerCase()) {
-    output.innerHTML = "WEEKEND!"
+  if (day === 'Tuesday'.toLowerCase() || day === 'Thursday') {
+    outputH2.innerText = "CLASS TIME!!!"
   } else if (day.includes('day')) {
-    output.innerHTML = "BORING!"
+    outputH2.innerText = "BORRRINNNNG!!!"
   } else {
-    output.innerHTML = "UMM WHAT?!"
+    outputH2.innerText = "UHMMM WHAT??!"
   }
-
 }

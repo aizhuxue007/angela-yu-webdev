@@ -1,32 +1,34 @@
-document.querySelector('#yell').addEventListener('click', run)
+const firstName = document.getElementById('firstName')
+const firstMiddle = document.getElementById('firstMiddle')
+const lastMiddle = document.getElementById('lastMiddle')
+const lastName = document.getElementById('lastName')
+const yellBtn = document.querySelector('#yell')
+const placeToYell = document.getElementById('placeToYell')
 
-function run() {
-  const fName = document.querySelector('#firstName').value
-  const fMidName = document.querySelector('#firstMiddle').value
-  const lMidName = document.querySelector('#lastMiddle').value
-  const lName = document.querySelector('#lastName').value
 
-  document.querySelector('#placeToYell').innerText = fName + ' ' + fMidName + ' ' + ' ' + lMidName + ' ' + lName
+yellBtn.addEventListener('click', yell)
 
-  //Add what you should be doing - conditionals go here
-
-  // document.querySelector('#placeToYell').innerText = `${fName} ${fMidName} ${lMidName} ${lName}`
+function yell() {
+  renderName()
+  speakName()
 }
 
-// const synth = window.speechSynthesis;
-// document.querySelector('#yell').addEventListener('click', run)
-//
-// function run() {
-//   const fName = document.querySelector('#firstName').value
-//   const fMidName = document.querySelector('#firstMiddle').value
-//   const lMidName = document.querySelector('#lastMiddle').value
-//   const lName = document.querySelector('#lastName').value
-//
-//   const yellText =  `${fName} ${fMidName} ${lMidName} ${lName}`
-//
-//   document.querySelector('#placeToYell').innerText = yellText
-//
-//   let yellThis = new SpeechSynthesisUtterance(yellText);
-//
-//   synth.speak(yellThis);
-// }
+function speakName() {
+  const robot = window.speechSynthesis
+  const utterance = new SpeechSynthesisUtterance(formatName())
+  robot.speak(utterance)
+}
+
+function renderName() {
+  placeToYell.innerText = formatName()
+}
+
+function formatName() {
+  return (
+    `${capitalize(firstName.value || '')} ${capitalize(firstMiddle.value)} ${capitalize(lastMiddle.value || '')} ${capitalize(lastName.value || '')}!!!`
+  )
+}
+
+function capitalize(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1)
+}
