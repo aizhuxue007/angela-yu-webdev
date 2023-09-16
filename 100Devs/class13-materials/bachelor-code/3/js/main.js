@@ -1,11 +1,22 @@
+// select contestant classes, claire andnikki
 const contestants = document.querySelectorAll('.contestant')
+const claire = document.getElementById('claire')
+const nikki = document.getElementById('nikki')
 
-Array.from(contestants).forEach(element => element.addEventListener('click', checkForRose))
+// add click listener for contestants
+contestants.forEach(contestant => contestant.addEventListener('click', () => {
+	console.log(contestant)
+}))
 
-function checkForRose(click){
-	if(click.target.classList.contains('rose')){
-		document.querySelector('#nikki').classList.toggle('hidden')
-	}else{
-		alert("Wrong!");
+// clicked()
+function clicked(contestant) {
+	// if contestant has class of rose
+	if (contestant.classList.contains('rose')) {
+		// show nikki pic
+		nikki.classList.toggle('hidden')
+	} else {
+		alert('wrong!')
 	}
+	// else
+		// alert wrong!
 }

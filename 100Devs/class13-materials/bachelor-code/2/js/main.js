@@ -1,25 +1,42 @@
-const andi = document.querySelector('#andi')
-const claire = document.querySelector('#claire')
-const sharleen = document.querySelector('#sharleen')
+// select andi, andiNext, claire, claireNext, sharleen and sharleenNext
+const andi = document.getElementById('andi')
+const andiNextHeading = document.getElementById('andiNext')
+const claire = document.getElementById('claire')
+const claireNextHeading = document.getElementById('claireNext')
+const sharleen = document.getElementById('sharleen')
+const sharleenNextHeading = document.getElementById('sharleenNext')
 
-document.querySelector('#andiNext').addEventListener('click', andiNext)
-document.querySelector('#claireNext').addEventListener('click', claireNext)
-document.querySelector('#sharleenNext').addEventListener('click', sharleenNext)
+// for all the Next, add click listener that calls corresponding nameNext functions
+andiNextHeading.addEventListener('click', andiNext)
+claireNextHeading.addEventListener('click', claireNext)
+sharleenNextHeading.addEventListener('click', sharleenNext)
 
-function andiNext(){
-	claire.classList.add('hidden')
-	sharleen.classList.add('hidden')
+// andiNext()
+function andiNext() {
+	// hide claireNext
+	claireNextHeading.classList.add('hidden')
+	// hide sharleenNext
+	sharleenNextHeading.classList.add('hidden')
+	// toggle andi
 	andi.classList.toggle('hidden')
 }
 
-function claireNext(){
-	sharleen.classList.add('hidden')
-	andi.classList.add('hidden')
+function claireNext() {
+// claireNext()
+	// hide andiNext
+	andiNextHeading.classList.add('hidden')
+	// hide sharleenNext
+	sharleenNextHeading.classList.add('hidden')
+	// toggle claire
 	claire.classList.toggle('hidden')
 }
 
-function sharleenNext(){
-	andi.classList.add('hidden')
-	claire.classList.add('hidden')
+function sharleenNext() {
+// sharleenNext()
+	// hide andiNext
+	andiNextHeading.classList.add('hidden')
+	// hide claireNext
+	claireNextHeading.classList.add('hidden')
+	// toggle sharleen
 	sharleen.classList.toggle('hidden')
 }

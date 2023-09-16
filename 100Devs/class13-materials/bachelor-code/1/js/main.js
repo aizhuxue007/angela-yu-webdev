@@ -1,7 +1,16 @@
-document.querySelector('#finalRose').addEventListener('click', hide)
+// select finalRoseH2, claire, nikki, sharleen
+const finalRoseH2 = document.getElementById('finalRose')
+const claire = document.getElementById('claire')
+const nikki = document.getElementById('nikki')
+const sharleen = document.getElementById('sharleen')
 
-function hide(){
-	console.log('hello')
-	document.querySelector('#claire').style.display = 'none'
-	document.querySelector('#sharleen').style.display = 'none'
+// add clicknlistener for finalRoseH2, when click run function
+finalRoseH2.addEventListener('click', run)
+
+// run function
+function run() {
+	// hide claire
+	claire.style.display = 'none'
+	// hide sharleen
+	sharleen.style.display = 'none'
 }
