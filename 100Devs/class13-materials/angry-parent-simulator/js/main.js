@@ -1,32 +1,61 @@
-document.querySelector('#yell').addEventListener('click', run)
+// select firstName, firstMiddle, lastMiddle, lastName and yellBtn and save into their respective variables
+const firstName = document.getElementById('firstName')
+const firstMiddle = document.getElementById('firstMiddle')
+const lastMiddle = document.getElementById('lastMiddle')
+const lastName = document.getElementById('lastName')
+const yellBtn = document.getElementById('yell')
+const outputH2 = document.getElementById('placeToYell')
 
-function run() {
-  const fName = document.querySelector('#firstName').value
-  const fMidName = document.querySelector('#firstMiddle').value
-  const lMidName = document.querySelector('#lastMiddle').value
-  const lName = document.querySelector('#lastName').value
+// select yellBtn and add eventlistener when clicked, when clicked call run function
+yellBtn.addEventListener('click', run)
 
-  // document.querySelector('#placeToYell').innerText = fName + ' ' + fMidName + ' ' + ' ' + lMidName + ' ' + lName
-
-  //Add what you should be doing - conditionals go here
-
-  document.querySelector('#placeToYell').innerText = `${fName} ${fMidName} ${lMidName} ${lName}`
+// getFirstName()
+function getCapitalizedFirstName() {
+  return capitalize(firstName.value)
 }
 
-// const synth = window.speechSynthesis;
-// document.querySelector('#yell').addEventListener('click', run)
-//
-// function run() {
-//   const fName = document.querySelector('#firstName').value
-//   const fMidName = document.querySelector('#firstMiddle').value
-//   const lMidName = document.querySelector('#lastMiddle').value
-//   const lName = document.querySelector('#lastName').value
-//
-//   const yellText =  `${fName} ${fMidName} ${lMidName} ${lName}`
-//
-//   document.querySelector('#placeToYell').innerText = yellText
-//
-//   let yellThis = new SpeechSynthesisUtterance(yellText);
-//
-//   synth.speak(yellThis);
-// }
+// getCapitalizedFirstMiddle()
+function getCapitalizedFirstMiddle() {
+  return capitalize(firstMiddle.value)
+}
+
+// getCapitalizedLastMiddle()
+function getCapitalizedLastMiddle() {
+  return capitalize(lastMiddle.value)
+}
+
+// getCapitalizedLastName()
+function getCapitalizedLastName() {
+  return capitalize(lastName.value)
+}
+
+function capitalize(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1)
+}
+
+function renderFullName() {
+  outputH2.innerText = formatFullName();
+}
+
+function yellFullName() {
+  const synth = window.speechSynthesis;
+  const utterance = new window.SpeechSynthesisUtterance(formatFullName())
+  synth.speak(utterance)
+}
+
+// run function
+function run() {
+  renderFullName()
+  yellFullName()
+}
+
+// select #placeToYell
+// concatenate full name and store into variable fullName
+// update #placeToYell with innerTEXT of fullName
+
+// formatFullName()
+  // each name has uppercase first letter -> another function
+function formatFullName() {
+  return `${getCapitalizedFirstName()} ${getCapitalizedFirstMiddle()} ${getCapitalizedLastMiddle()} ${getCapitalizedLastName()}`
+}
+
