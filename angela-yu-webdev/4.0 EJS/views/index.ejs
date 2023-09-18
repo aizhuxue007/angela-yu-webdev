@@ -1,0 +1,13 @@
+
+<body>
+    <h1>
+        Hey! 
+        <% if (!isWeekend) { %>
+            It's a weekday, it's time to work hard!
+        <% } else if (isWeekend === 'out of scope') { %>
+            days out of scope
+        <% } else { %>
+            It's the weekend, it's time to have fun!
+        <% } %>
+    </h1>
+</body>
