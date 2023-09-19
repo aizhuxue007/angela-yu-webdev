@@ -5,7 +5,7 @@ const nikki = document.getElementById('nikki')
 
 // add click listener for contestants
 contestants.forEach(contestant => contestant.addEventListener('click', () => {
-	console.log(contestant)
+	clicked(contestant)
 }))
 
 // clicked()

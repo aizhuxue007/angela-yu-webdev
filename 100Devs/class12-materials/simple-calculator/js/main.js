@@ -22,7 +22,7 @@ function calculateSecondLiAndDisplay() {
 }
 
 function calculateThirdLiAndDisplay() {
-  total -= 9
+  total += 9
   displayTotal()
 }
 
