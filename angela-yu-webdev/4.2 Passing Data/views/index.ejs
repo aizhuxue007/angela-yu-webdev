@@ -8,6 +8,9 @@
 </head>
 
 <body>
+  <% if (!locals.letters) { %> 
+    <h1>Enter your name</h1>
+  <% } %>
   <% if (locals.letters) {%>
       <h2>There are <%= letters %> letters in your name.</h2>
   <% } %>
