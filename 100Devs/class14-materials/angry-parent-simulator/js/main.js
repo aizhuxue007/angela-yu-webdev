@@ -1,32 +1,28 @@
-document.querySelector('#yell').addEventListener('click', run)
+document.getElementById('yell').addEventListener('click', screamInTextAndVoice)
 
-function run() {
-  const fName = document.querySelector('#firstName').value
-  const fMidName = document.querySelector('#firstMiddle').value
-  const lMidName = document.querySelector('#lastMiddle').value
-  const lName = document.querySelector('#lastName').value
+function screamInTextAndVoice() {
+  const fName = document.getElementById('firstName').value;
+  const fMiddle = document.getElementById('firstMiddle').value;
+  const lMiddle = document.getElementById('lastMiddle').value;
+  const lName = document.getElementById('lastName').value;
+  const saying = capitalizeFirstLetters(`${fName} ${fMiddle} ${lMiddle} ${lName}`);
 
-  // document.querySelector('#placeToYell').innerText = fName + ' ' + fMidName + ' ' + ' ' + lMidName + ' ' + lName
-
-  //Add what you should be doing - conditionals go here
-
-  document.querySelector('#placeToYell').innerText = `${fName} ${fMidName} ${lMidName} ${lName}`
+  screamInText(saying);
+  screamInVoice(saying);
 }
 
-// const synth = window.speechSynthesis;
-// document.querySelector('#yell').addEventListener('click', run)
-//
-// function run() {
-//   const fName = document.querySelector('#firstName').value
-//   const fMidName = document.querySelector('#firstMiddle').value
-//   const lMidName = document.querySelector('#lastMiddle').value
-//   const lName = document.querySelector('#lastName').value
-//
-//   const yellText =  `${fName} ${fMidName} ${lMidName} ${lName}`
-//
-//   document.querySelector('#placeToYell').innerText = yellText
-//
-//   let yellThis = new SpeechSynthesisUtterance(yellText);
-//
-//   synth.speak(yellThis);
-// }
+function capitalizeFirstLetters(str) {
+  return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+}
+
+function screamInText(saying) {
+  document.getElementById('placeToYell').innerText = saying;
+}
+
+function screamInVoice(saying) {
+  const synth = window.speechSynthesis;
+  const utterance = new SpeechSynthesisUtterance(saying)
+
+  synth.speak(utterance);
+}
