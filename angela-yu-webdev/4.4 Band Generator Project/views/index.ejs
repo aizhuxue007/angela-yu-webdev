@@ -7,7 +7,9 @@
     Show the default h1 below -->
 
   <% if (locals.adjective && locals.noun) { %>
-    <h1><%=adjective%><%=noun%></h1>
+    <h1><%=adjective%> <%=noun%></h1>
+  <% } else { %>
+        <h1>Welcome to Band Name Generator!</h1>
   <% } %>
     
 <form action="/submit" method="POST">
