@@ -23,3 +23,26 @@
 // 	claire.classList.add('hidden')
 // 	sharleen.classList.toggle('hidden')
 // }
+
+document.getElementById('andiNext').addEventListener('click', andiNext)
+document.getElementById('claireNext').addEventListener('click', claireNext)
+document.getElementById('sharleenNext').addEventListener('click', sharleenNext)
+
+function andiNext() {
+	document.getElementById('claire').classList.add('hidden');
+	document.getElementById('sharleen').classList.add('hidden');
+	document.getElementById('andi').toggle = 'hidden'
+}
+
+function claireNext() {
+	document.getElementById('andi').classList.add('hidden');
+	document.getElementById('sharleen').classList.add('hidden');
+	document.getElementById('claire').toggle('hidden')
+}
+
+function sharleenNext() {
+	document.getElementById('andi').classList.add('hidden');
+	document.getElementById('claire').classList.add('hidden');
+	document.getElementById('sharleen').toggle('hidden')
+}
+
