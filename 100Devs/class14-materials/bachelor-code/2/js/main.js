@@ -24,6 +24,8 @@
 // 	sharleen.classList.toggle('hidden')
 // }
 
+document.querySelector('body').style.textAlign = 'center';
+
 document.getElementById('andiNext').addEventListener('click', andiNext)
 document.getElementById('claireNext').addEventListener('click', claireNext)
 document.getElementById('sharleenNext').addEventListener('click', sharleenNext)

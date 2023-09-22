@@ -21,6 +21,8 @@
 //   } else { output('HUUHH WHHHAT??'); }
 // }
 
+document.querySelector('body').style.textAlign = 'center';
+
 document.getElementById('check').addEventListener('click', checkDay);
 
 // add click listener that runs checkDay()

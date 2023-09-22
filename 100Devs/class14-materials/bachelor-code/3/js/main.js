@@ -12,6 +12,8 @@
 
 // add click listeners for both contestants that calls handle
 
+document.querySelector('body').style.textAlign = 'center';
+
 const contestants = document.querySelectorAll('.contestant');
 
 // loop thru contestants to add click listeners
