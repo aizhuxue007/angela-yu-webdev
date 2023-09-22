@@ -20,3 +20,25 @@
 // function toF(c) {
 //     return c * 9/5 + 32;
 // }
+
+// click listener that calls handleSubmit
+document.getElementById('toF').addEventListener('click', handleSubmit)
+
+// handleSubmit()
+    // get input value assign to c
+    // convertToF(c)
+    // render(c)
+document.querySelector('body').style.textAlign = 'center';
+
+function handleSubmit() {
+    const celsius = document.getElementById('celsius').value;
+    render( convertToF(celsius) + " °F")
+}
+
+function convertToF(c) {
+    return c * (9/5) + 32;
+}
+
+function render(txt) {
+    document.getElementById('output').innerText = txt;
+}

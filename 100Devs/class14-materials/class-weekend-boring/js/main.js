@@ -20,3 +20,30 @@
 //     output('BOORRRINNG!'); 
 //   } else { output('HUUHH WHHHAT??'); }
 // }
+
+document.getElementById('check').addEventListener('click', checkDay);
+
+// add click listener that runs checkDay()
+    // select dayInput, output
+    // if dayInput === 'tuesday' or equals 'thursday'
+        // output.innerTEXT = 'CLASS TIME'
+    // else if dayInput.include('day')
+        // output 'BORING'
+    // else 
+        // output 'HUHHHH Whatt?'
+
+function checkDay() {
+    const dayInput = document.getElementById('day').value.toLowerCase()
+    if (dayInput === 'tuesday' || dayInput === 'thursday') {
+        render('CLASS TIME');
+    } else if (dayInput.includes('day')) {
+        render('BORING!');
+    } else {
+        render('HUUHHH WHATT?!');
+    }
+}
+
+function render(txt) {
+    const output = document.getElementById('placeToSee')
+    output.innerText = txt;
+}
