@@ -1,0 +1,14 @@
+.hidden{
+	display: none;
+}
+
+.img-container {
+	width: 85%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.img-container img {
+	width: 100%;
+	height: auto;
+}
