@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8u9-FN5U1QCqudlOvF0wX1wWWRRnArkryXWp6UTK-qjq5SU4y2Gfuc0yz7UAaGqx2xXk&usqp=CAU">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body>
+    <div class="content-area">
+        <div class="calculator">
+            <div class="display-area">
+                <div class="display-container">
+                    <textarea id="history" class="display__input reverse-textarea" value="" rows="6"></textarea>
+                </div>
+                <div class="display-container">
+                    <input type="text" id="display" class="display__input" value="" readonly>
+                    <span class="cursor"></span>
+                </div>
+            </div>
+            <div class="interact-section">
+                <div class="buttons">
+                    <button id="clear" class="button">
+                        <span class="function">AC</span>
+                    </button>
+                    <button id="sign" class="button function">
+                        <i class="fa-solid fa-plus-minus"></i>
+                    </button>
+                    <button class="button function">
+                        <i class="fa-solid fa-percent"></i>
+                    </button>
+                    <button class="button operation" value=" / ">
+                        <i class="fa-solid fa-divide"></i>
+                    </button>
+                    <button class="button button__number">7</button>
+                    <button class="button button__number">8</button>
+                    <button class="button button__number">9</button>
+                    <button class="button operation" value=" * ">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <button class="button button__number">4</button>
+                    <button class="button button__number">5</button>
+                    <button class="button button__number">6</button>
+                    <button class="button operation" value=" - ">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <button class="button button__number">1</button>
+                    <button class="button button__number">2</button>
+                    <button class="button button__number">3</button>
+                    <button class="button operation" value=" + ">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button id="refresh" class="button">
+                        <i class="fa-solid fa-rotate-left function"></i>
+                    </button>
+                    <button class="button button__number">0</button>
+                    <button class="button button__number">.</button>
+                    <button id="calculate" class="button function">
+                        <i class="fa-solid fa-equals operation"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.mjs"></script>
+</body>
+</html>
