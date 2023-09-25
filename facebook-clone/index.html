@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <-title>Facebook Clone</-title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/font5/all.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo-section">
+                <div class="header__logo-icon">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="header__logo-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search Facebook">
+                </div>
+                <i class="fas fa-bars header__menu-bar"></i>
+            </div>
+            <div class="header__menu-tabs">
+                <div class="header__menu-tab header__menu-tab--active">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="header__menu-tab">
+                    <i class="fas fa-flag">
+                        <div class="header__notifications-bubble">3</div>
+                    </i>
+                </div>
+                <div class="header__menu-tab">
+                    <i class="fas fa-tv">
+                        <div class="header__notifications-bubble">9+</div>
+                    </i>
+                </div>
+                <div class="header__menu-tab">
+                    <i class="fas fa-store"></i>
+                </div>
+                <div class="header__menu-tab">
+                    <i class="fas fa-users">
+                        <div class="header__notifications-bubble">5</div>
+                    </i>
+                </div>
+            </div>
+            <div class="header__account">
+                <div class="header__actions">
+                    <img class="header__user-img" src="https://randomuser.me/api/portraits/women/44.jpg" alt="women-44" class="header__user-img">
+                    <span class="header__user-name">Jane Doe</span>
+                    <a href="#" class="header__circle-link">
+                        <i class="header__link-icon fas fa-plus"></i>
+                    </a>
+                    <a href="#" class="header__circle-link">
+                        <i class="header__link-icon fab fa-facebook-messenger">
+                            <div class="header__notifications-bubble">8</div>
+                        </i>
+                    </a>
+                    <a href="#" class="header__circle-link">
+                        <i class="header__link-icon fas fa-bell">
+                            <div class="header__notifications-bubble">16</div>
+                        </i>
+                    </a>
+                    <a href="#" class="header__circle-link">
+                        <i class="header__link-icon fas fa-sort-down"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="content-area content-area--feed">
+            <section class="sidenav">
+                <div class="sidenav__item">
+                    <img class="sidenav__item--img" src="https://randomuser.me/api/portraits/women/44.jpg" alt="woman-44">
+                    <span for="name" class="sidenav__item--title">Jane Doe</span>
+                </div>
+                <div class="sidenav__item">
+                    <div class="sidenav__item--icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <span for="friends" class="sidenav__item--title">Friends</span>
+                </div>
+                <div class="sidenav__item">
+                    <div class="sidenav__item--icon">
+                        <i class="fas fa-flag"></i>
+                    </div>                    
+                    <span for="Pages" class="sidenav__item--title">Pages
+                        <span class="sidenav__item--notifications">
+                            <div class="sidenav__item--notifications-circle"></div>
+                            3 new
+                        </span>
+                    </span>
+                </div>
+                <div class="sidenav__item">
+                    <div class="sidenav__item--icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <span for="Groups" class="sidenav__item--title">Groups
+                        <span class="sidenav__item--notifications">
+                            <div class="sidenav__item--notifications-circle"></div>
+                            5 new
+                        </span>
+                    </span>
+                </div>
+                <div class="sidenav__item">
+                    <div class="sidenav__item--icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <span for="Marketplace" class="sidenav__item--title">Marketplace</span>
+                </div>
+                <div class="sidenav__item">
+                    <div class="sidenav__item--icon sidenav__item-icon--circle">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <span for="see-more" class="sidenav__item--title">See More</span>
+                </div>
+                <div class="sidenav__item--bar">
+                </div>
+                <div class="sidenav__item">
+                    <span class="sidenav__item--shortcuts">Your Shortcuts</span>
+                </div>
+                <div class="sidenav__item">
+                    <div class="sidenav__item--img sidenav__item-icon--circle-white">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <span for="name" class="sidenav__item--title">CodingPhase Students</span>
+                </div>
+                <div class="sidenav__item">
+                    <img class="sidenav__item--img-rounded-rectangle" src="https://clutchco-static.s3.amazonaws.com/s3fs-public/logos/logo-developers-perfil.png?VersionId=KnWxHbSn3y5Xv256djWcGYE_SVsHZFKv" alt="woman-44">
+                    <span for="name" class="sidenav__item--title">CodingPhase ASAP Developers</span>
+                </div>
+                <div class="sidenav__item">
+                    <img class="sidenav__item--img" src="https://dslv9ilpbe7p1.cloudfront.net/wPXPraS1IkCg1QjdNsLGDg_store_logo_image.png" alt="woman-44">
+                    <span for="name" class="sidenav__item--title">CodingPhase</span>
+                </div>
+                <div class="sidenav__item">
+                    <img class="sidenav__item--img" src="data:image/jpeg;base64,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" alt="woman-44">
+                    <span for="name" class="sidenav__item--title">FreshandViral</span>
+                </div>
+                <div class="sidenav__item">
+                    <img class="sidenav__item--img-rounded-rectangle" src="data:image/png;base64,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" alt="woman-44">
+                    <span for="name" class="sidenav__item--title">ClickFunnels (Official)</span>
+                </div>
+                <div class="sidenav__item">
+                    <img class="sidenav__item--img-rounded-rectangle" src="data:image/png;base64,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" alt="woman-44">
+                    <span for="name" class="sidenav__item--title">Shopify App Developers</span>
+                </div>
+                <div class="sidenav__item">
+                    <div class="sidenav__item--icon sidenav__item-icon--circle">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <span for="see-more" class="sidenav__item--title">See More</span>
+                </div>
+            </section>
+            <section class="feed">
+                <div class="stories">
+                    <div class="stories__video-container">
+                            <img class="stories__bg" src="https://media.cnn.com/api/v1/images/stellar/prod/230526051033-02-boston-celtics-miami-heat-spt-intl.jpg?c=16x9&q=h_720,w_1280,c_fill" alt="celtics">
+                            <div class="stories__title-new-btn">
+                                <div class="stories__new-btn">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <label>Create a Story</label>  
+                            </div>
+                    </div>
+                    <div class="stories__video-container">
+                        <img class="stories__user-img" src="https://randomuser.me/api/portraits/men/23.jpg" alt="men-23" class="header__user-img">
+                        <img class="stories__bg" src="https://picsum.photos/200/300" alt="man-1">
+                        <div class="stories__title">
+                            <label>Andres Jose Santos</label>  
+                        </div>
+                    </div>
+                    <div class="stories__video-container">
+                        <img class="stories__user-img" src="https://randomuser.me/api/portraits/men/44.jpg" alt="men-44" class="header__user-img">
+                        <img class="stories__bg" src="https://picsum.photos/200/700" alt="man-1">
+                        <div class="stories__title">
+                            <label>John Smith</label>  
+                        </div>
+                    </div>
+                    <div class="stories__video-container">
+                        <img class="stories__user-img" src="https://randomuser.me/api/portraits/women/43.jpg" alt="women-43" class="header__user-img">
+                        <img class="stories__bg" src="https://picsum.photos/200/550" alt="man-1">
+                        <div class="stories__title">
+                            <label>Maria Knocktop</label>  
+                        </div>
+                    </div>
+                    <div class="stories__video-container">
+                        <img class="stories__user-img" src="https://randomuser.me/api/portraits/men/34.jpg" alt="men-34" class="header__user-img">
+                        <img class="stories__bg" src="https://picsum.photos/200/800" alt="man-1">
+                        <div class="stories__title">
+                            <label>Peter White</label>  
+                        </div>
+                    </div>
+                    <div class="stories__video-container">
+                        <img class="stories__user-img" src="https://randomuser.me/api/portraits/women/8.jpg" alt="women-2" class="header__user-img">
+                        <img class="stories__bg" src="https://picsum.photos/200/208" alt="man-1">
+                        <div class="stories__title">
+                            <label>Jennifer Smith</label>  
+                        </div>
+                    </div>
+                    <div class="stories__next-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="feedbox newpost">
+                    <div class="newpost">
+                        <div class="newpost__input-section">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+                            <input class="newpost__input-field" type="text" placeholder="What's on your mind, Jane?">
+                        </div>
+                        <div class="newpost__horizontal-rule"></div>
+                        <div class="newpost__post-types">
+                            <div class="newpost__type-item">
+                                <i class="fas fa-video red big"></i>
+                                <label class="newpost__btn-label">Live Video</label>
+                            </div>
+                            <div class="newpost__type-item">
+                                <i class="fas fa-photo-video green big"></i>
+                                <label class="newpost__btn-label">Photo/Video</label>
+                            </div>
+                            <div class="newpost__type-item">
+                                <i class="far fa-laugh yellow big"></i>
+                                <label class="newpost__btn-label">Feeling/Activity</label>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="feedbox createroom">
+                    <div class="createroom__section">
+                        <div class="createroom__btn">
+                            <i class="fas fa-video mr createroom__btn-icon"></i>
+                            <span class="createroom_btn-label">Create Room</span>
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/women/9.jpg" alt="">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/men/9.jpg" alt="">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/women/10.jpg" alt="">
+                            <div class="online-status"></div>
+
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+                            <div class="online-status"></div>
+
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/men/11.jpg" alt="">
+                            <div class="online-status"></div>
+
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/women/12.jpg" alt="">
+                            <div class="online-status"></div>
+
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/women/13.jpg" alt="">
+                            <div class="online-status"></div>
+
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/women/14.jpg" alt="">
+                            <div class="online-status"></div>
+
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
+                            <div class="online-status"></div>
+
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/women/15.jpg" alt="">
+                            <div class="online-status"></div>
+
+                        </div>
+                        <div class="createroom__user">
+                            <img class="createroom__profile-pic" src="https://randomuser.me/api/portraits/women/11.jpg" alt="">
+                            <div class="online-status"></div>
+
+                        </div>
+                        <div class="createroom__next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedbox photopost">
+                    <div class="photopost__header">
+                        <div class="photopost__header-user">
+                            <div class="photopost__user">
+                                <div class="user__pic">
+                                    <img class="user__img" src="https://randomuser.me/api/portraits/women/62.jpg" alt="">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="user__info">
+                                    <label for="name" class="user__name">Jessica Fairings</label>
+                                    <label for="last-seen" class="user__last-seen">
+                                        16m ·
+                                        <span class="user__friend">
+                                            <i class="fas fa-user-friends"></i>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="ellipsis" for="ellipsis">⋯</label>
+                    </div>
+                    <div class="photopost__text-area">
+                        <span class="textarea">My word!.. Hi mommy 😀 😃 @rosette_cueva </span>
+                    </div>
+                    <img class="photopost__img" src="https://images.pexels.com/photos/2465818/pexels-photo-2465818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" >
+                
+                    <div class="photopost__react">
+                        <div class="react__engagements">
+                            <div class="engagement__left">
+                                <div class="engagement__circle blue-like-circle">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="engagement__circle red-loved-circle">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="engagement__circle yellow-shocked-circle">
+                                    <i class="far fa-surprise"></i>
+                                </div>
+                                <label for="" class="engagement__label">3.3K</label>
+                            </div>
+                            <div class="engagment__right"><label for="" class="engagement__label">788 Comments</label>
+                                <label for="" class="engagement__label">73 Shares</label></div>
+                        </div>
+                        <div class="horizontal-rule"></div>
+                        <div class="react__actions">
+                            <div class="react__action">
+                                <i class="fas fa-thumbs-up mr"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="react__action">
+                                <i class="fas fa-comment-alt mr"></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="react__action">
+                                <i class="fas fa-share mr"></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="floatingmsg">
+            <div class="floatingmsg__bubble">
+                <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="" class="bubble__img">
+                <div class="bubble__notifications">3</div>
+            </div>
+            <div class="floatingmsg__bubble">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="" class="bubble__img">
+            </div>
+            <div class="floatingmsg__bubble">
+                <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="" class="bubble__img">
+                <div class="bubble__notifications">1</div>
+            </div>
+            <div class="floatingmsg__bubble">
+                <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="" class="bubble__img">
+                <div class="bubble__notifications">1</div>
+            </div>
+            <div class="floatingmsg__bubble">
+                <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="" class="bubble__img">
+            </div>
+            <div class="floatingmsg__bubble">
+                <div class="far fa-edit bubble__edit"></div>
+            </div>
+        </section>
+    </body>
+</html>
+<!-- <div class="photopost">
+    <div class="photopost__header">
+        <div class="photopost__header-user">
+            <div class="photopost__user">
+                <div class="user__pic">
+                    <img class="user__img" src="https://randomuser.me/api/portraits/women/62.jpg" alt="">
+                    <div class="online-status"></div>
+                </div>
+                <div class="user__info">
+                    <label for="name" class="user__name">Jessica Fairings</label>
+                    <label for="last-seen" class="user__last-seen">
+                        16m ·
+                        <span class="user__friend">
+                            <i class="fas fa-friend"></i>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="photopost__actions">
+                <label for="ellipsis">⋯</label>
+            </div>
+        </div>
+        
+        <div class="photopost__text-area">
+            <span class="textarea">My word!.. Hi mommy 😀 😃 @rosette_cueva </span>
+        </div>
+        <img class="photopost__img" src="https://images.pexels.com/photos/2465818/pexels-photo-2465818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" >
+        <div class="photopost__stats">
+            <div class="photopost__reactions">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-heart"></i>
+                <label for="" class="reaction__stats">72</label>
+            </div>
+            <div class="photopost__comments">
+                <label for="comments">12 comments</label>
+            </div>
+        </div>
+    <div class="horizontal-rule"></div>
+    <div class="photopost__react">
+        <div class="react__like">
+            <i class="fal fa-thumbs-up"></i>
+            <span>Like</span>
+        </div>
+        <div class="react__comment">
+            <i class="far fa-comment-alt"></i>
+            <span>Comment</span>
+        </div>
+        <div class="react__share">
+            <i class="fal fa-share"></i>
+            <span>Share</span>
+        </div>
+    </div>
+</div> -->
