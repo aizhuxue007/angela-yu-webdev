@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Title</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Spiderman</td>
+                <td><a href="www.google.com">Spiderman</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td rowspan="2">Spiderman 2</td>
+                <td><a href="www.google.com">Spiderman 2</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Spiderman 3</td>
+                <td><a href="www.google.com">Spiderman 3</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th rowspan="2">2023 Aizhu</th>
+            </tr>
+        </tfoot>
+    </table>
+    <form action="/signup" method="post" autocomplete="on">
+        <label>Title</label>
+        <div class="honorific-buttons">
+            <label>
+                <input type="radio" name="title">
+                Mr
+            </label>
+            <label>
+                <input type="radio" name="title">
+                Mrs
+            </label>
+            <label>
+                <input type="radio" name="title">
+                Miss
+            </label>
+        </div>
+        <p class="text-fields">
+            <label>
+                First Name
+                <input type="text" name="first-name">
+            </label><br>
+            <label>
+                Last Name
+                <input type="text" name="last-name">
+            </label>
+            <label><br>
+                Email
+                <input type="email" name="email">
+            </label><br>
+            <label>
+                Phone number
+                <input type="tel" name="phone">
+            </label><br>
+            <label>
+                Password
+                <input type="password" name="password">
+            </label>
+        </p>
+        <label>
+            Country
+        </label>
+        <select>
+            <option>China</option>
+            <option>Korea</option>
+            <option>United States</option>
+        </select>
+        <br>
+        <labeL>
+            <input type="checkbox" value="terms">
+            I agree to the <a href="/terms"> terms and conditions.</a>
+        </labeL>
+        <button>Sign Up</button>
+        <button>Reset Form</button>
+    </form>
+</body>
+</html>
