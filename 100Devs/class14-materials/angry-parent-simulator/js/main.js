@@ -1,68 +1,32 @@
-// document.getElementById('yell').addEventListener('click', screamInTextAndVoice)
+document.querySelector('#yell').addEventListener('click', run)
 
-// function screamInTextAndVoice() {
-//   const fName = document.getElementById('firstName').value;
-//   const fMiddle = document.getElementById('firstMiddle').value;
-//   const lMiddle = document.getElementById('lastMiddle').value;
-//   const lName = document.getElementById('lastName').value;
-//   const saying = capitalizeFirstLetters(`${fName} ${fMiddle} ${lMiddle} ${lName}`);
+function run() {
+  const fName = document.querySelector('#firstName').value
+  const fMidName = document.querySelector('#firstMiddle').value
+  const lMidName = document.querySelector('#lastMiddle').value
+  const lName = document.querySelector('#lastName').value
 
-//   screamInText(saying);
-//   screamInVoice(saying);
-// }
+  // document.querySelector('#placeToYell').innerText = fName + ' ' + fMidName + ' ' + ' ' + lMidName + ' ' + lName
 
-// function capitalizeFirstLetters(str) {
-//   return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  //Add what you should be doing - conditionals go here
 
-// }
-
-// function screamInText(saying) {
-//   document.getElementById('placeToYell').innerText = saying;
-// }
-
-// function screamInVoice(saying) {
-//   const synth = window.speechSynthesis;
-//   const utterance = new SpeechSynthesisUtterance(saying)
-
-//   synth.speak(utterance);
-// }
-
-// Pseudocode
-// 1. add click listener that calls handleSubmit when click
-document.getElementById('yell').addEventListener('click', handleSubmit)
-// 2. in handleSubmit()
-      // 3. select all the inputs (fName, fMiddle, lMiddle, lName, output)
-      // 4. fullName = capitalizeFullName()
-      // 4. yellText()
-            // output inner text = fullName
-      // 4. yellUtterance()
-            // create synth
-            // utterance = synthisize utterance(fullName)
-            // synth speak (utterance)
-var output = document.getElementById('placeToYell');  
-
-function handleSubmit() {
-  const fName = document.getElementById('firstName').value;
-  const fMiddle = document.getElementById('firstMiddle').value;
-  const lMiddle = document.getElementById('lastMiddle').value;
-  const lName = document.getElementById('lastName').value;
-  const fullName = `${cap(fName)} ${cap(fMiddle)} ${cap(lMiddle)} ${cap(lName)}`;
-  // console.log(`${fName} ${fMiddle} ${lMiddle} ${lName}`)
-  yellText(fullName);
-  yellVoice(fullName);
+  document.querySelector('#placeToYell').innerText = `${fName} ${fMidName} ${lMidName} ${lName}`
 }
 
-function cap(word) {
-  return word.charAt(0).toUpperCase() + word.slice(1);
-}
-
-
-function yellText(word) {
-  output.innerText = word + '!!!!!';
-}
-
-function yellVoice(word) {
-  const synth = window.speechSynthesis;
-  const utterance = new SpeechSynthesisUtterance(word);
-  synth.speak(utterance);
-}
+// const synth = window.speechSynthesis;
+// document.querySelector('#yell').addEventListener('click', run)
+//
+// function run() {
+//   const fName = document.querySelector('#firstName').value
+//   const fMidName = document.querySelector('#firstMiddle').value
+//   const lMidName = document.querySelector('#lastMiddle').value
+//   const lName = document.querySelector('#lastName').value
+//
+//   const yellText =  `${fName} ${fMidName} ${lMidName} ${lName}`
+//
+//   document.querySelector('#placeToYell').innerText = yellText
+//
+//   let yellThis = new SpeechSynthesisUtterance(yellText);
+//
+//   synth.speak(yellThis);
+// }

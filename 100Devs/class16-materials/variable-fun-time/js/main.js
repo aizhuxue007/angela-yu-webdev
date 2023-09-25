@@ -21,7 +21,8 @@ alert(inputVal)
 
 //--- Hard
 //create a variable that holds the h1
-const h1 = document.querySelector('h1')
+const h1 = document.querySelector('h1') // on page load
+
 
 //add an event listener to that element that console logs the sum of the two previous variables
 h1.addEventListener('click', sumPrevVariables)
