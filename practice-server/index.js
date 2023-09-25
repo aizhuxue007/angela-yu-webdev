@@ -7,6 +7,7 @@ const app = express();
 const port = 3000;
 const __dirname = dirname(fileURLToPath(import.meta.url))
 var people = [];
+var password = '';
 
 // middleware 
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -16,9 +17,14 @@ function getPeople(req, res, next) {
     next();
 }
 
+function getPassword(req, res, next) {
+    password = "password123";
+    next();
+}
+
 // routes
-app.get('/', getPeople, (req, res) => {
-    res.render('index.ejs', {people: people})
+app.get('/', getPeople, getPassword, (req, res) => {
+    res.render('index.ejs', { people, password });
 })
 
 app.post('/submit', (req, res) => {
@@ -30,3 +36,4 @@ app.post('/submit', (req, res) => {
 app.listen(port, () => {
     console.log(`server is up and listening at port: ${port}`)
 })
+
