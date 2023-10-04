@@ -48,9 +48,16 @@
 .hero__content__btns {
     display: flex;
     align-items: center;
+    gap: 2em;
+    margin: 2em 0;
 }
 
-.how-to-order-btn {
+.play-btn {
+    background-color: var(--color-creamson);
+    border: none;
+}
+
+.play-btn__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
