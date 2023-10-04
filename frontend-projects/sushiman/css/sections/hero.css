@@ -44,3 +44,14 @@
     font-family: var(--playfair-display);
     margin-bottom: 0.5em;
 }
+
+.hero__content__btns {
+    display: flex;
+    align-items: center;
+}
+
+.how-to-order-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
