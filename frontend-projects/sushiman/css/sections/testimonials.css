@@ -1,3 +1,63 @@
 .testimonials {
     background-color: var(--color-white);
 }
+
+.testimonials__reviews {
+    display: flex;
+}
+
+.reviews--margined {
+    margin: 2em 1.5em;
+}
+
+.reviews__stats {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.reviews__stats__number {
+    font-family: var(--playfair-display);
+    font-size: 4rem;
+}
+
+.reviews__stats__number + p {
+    margin-left: 1em;
+    color: var(--gray-100);
+}
+
+.reviews__customer {
+    flex-basis: 50%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    border-left: 1px solid var(--gray-100);
+    padding-left: 2em;
+}
+
+.reviews__customer img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.reviews__customer p {
+    font-size: 0.75rem;
+    line-height: 2.5em;
+}
+
+.testimonial__visuals {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.visual {
+    display: flex;
+    padding: 2em 0;
+}
+.visual__sushi {
+}
+
+.visual img {
+    width: 100%;
+    height: 100%;
+}

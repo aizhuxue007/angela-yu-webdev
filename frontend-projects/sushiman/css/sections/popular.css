@@ -1,0 +1,93 @@
+.popular {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    padding: 3em 0;
+}
+
+.popular h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--playfair-display);
+}
+
+.popular__foods {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1em 0;
+    margin: 2em 0;
+}
+
+.glass {
+    background-color: rgba(240, 240, 240, 0.05);
+    border-radius: 25px;
+    border: 1px solid rgba(240, 240, 240, 0.2);
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    padding: 0.75em 1.75em;
+    margin: 0 1em;
+}
+
+.tab {
+    object-fit: contain;
+    object-position: center;
+    margin-right: 1em;
+}
+
+.food img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.popular__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.card {
+  text-align: center;
+  padding: 2em;
+  height: fit-content;
+}
+
+.card > img {
+    width: 7rem;
+    height: 5rem;
+}
+
+.card__numbers {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin: 2em 0;
+    font-size: 1.3rem
+}
+
+.card__review-score {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.card__review-score img {
+    margin-right: 0.5em;
+}
+
+.card__price {
+    font-weight: 600;
+}
+
+.card--active {
+    background-color: var(--color-white);
+    color: var(--black-500);
+}
+
+.card--active > img {
+    width: 14em;
+    height: 10em;
+}
