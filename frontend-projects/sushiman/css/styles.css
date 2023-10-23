@@ -5,17 +5,11 @@
 @import url("./sections/header.css");
 @import url("./sections/hero.css");
 @import url("./sections/testimonials.css");
-
 @import url("sections/about.css");
-
 @import url("sections/popular.css");
-
-
 @import url("sections/trending.css");
-
-/**
 @import url("sections/subscribe.css");
-@import url("sections/footer.css"); */ 
+@import url("sections/footer.css"); 
 
 /* CSS variables for reusablity across all files (including above imported) */
 :root {
@@ -54,9 +48,13 @@ a {
   color: inherit;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   width: 90%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 

@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
    align-items: flex-end;
-    padding: 0 0 1em 1em;
+    padding: 0 0 2em 1em;
 }
 
 .hero__img {
@@ -22,11 +22,6 @@
     object-fit: contain;
 }
 
-/* not sure what overlay does */
-.hero-img__overlay {
-    
-}
-
 .hero__japanese-title {
     color: var(--color-white);
     font-family: var(--plus-jakarta-sans);
@@ -37,10 +32,11 @@
 
 .hero__content {
     padding: 3em 0 4em;
+    background-color: var(--color-creamson);
 }
 
 .hero__content h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     font-family: var(--playfair-display);
     margin-bottom: 0.5em;
 }
@@ -66,4 +62,25 @@
 
 .play-btn__content img {
     margin-right: 1em;
+}
+
+@media (min-width: 900px) {
+   .hero {
+        display: flex;
+   } 
+
+   .hero-right {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .hero-main {
+    flex: 2;
+   }
+
+   .hero__content {
+    flex: 5;
+   }
+
 }

@@ -2,25 +2,66 @@ header {
     background-color: var(--primary-color);
 }
 
-.header__nav { 
+.header__nav {
     display: flex;
     justify-content: space-between;
     padding: 1.5em 0;
+    position: relative;
+    z-index: 10;
 }
-  
+
 .header__nav h3 {
-color: var(--color-white);
-font-size: 1.5rem;
-text-transform: uppercase;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .header__hero {
-position: relative;
-background-color: var(--primary-color);
+    position: relative;
+    background-color: var(--primary-color);
 }
 
 .header__nav img {
-cursor: pointer;
+    cursor: pointer;
 }
 
+.nav__links {
+    list-style: none;
+    flex-direction: row;
+    gap: 1em;
+    color: white;
+}
 
+.nav__links li {
+    cursor: pointer;
+}
+
+.nav__mobile {
+    visibility: hidden;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+@media (min-width: 900px) {
+    .container.header__nav nav {
+        width: 95%;
+        max-width: 1200px;
+    }
+
+    .nav__mobile-menu {
+        display: none;
+    }
+
+    body>header>nav>div.nav__desktop>ul {
+        display: flex;
+    }
+}

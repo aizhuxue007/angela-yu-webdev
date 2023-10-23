@@ -5,12 +5,12 @@ console.log(favHoliday);
 
 //Declare a variable, assign it a string, alert the last three characters in the string (Use your google-fu and the MDN)
 let str = 'last threee letters';
-alert(str.split('').slice(-3).join(""));
+alert( str.slice(-3) );
 
 // *Functions*
 // Create a function that takes in 5 numbers. Subtract all five from 100. Alert the absolute value of the difference. Call the function.
 function absolute(n1, n2, n3, n4, n5) {
-    alert(100 - n1 - n2 - n3 - n4 - n5);
+    alert(Math.abs(100 - n1 - n2 - n3 - n4 - n5));
 }
 
 absolute(10, 10, 10, 10, 10);
@@ -25,7 +25,7 @@ highAndLow(1, 2, 3);
 // *Conditionals*
 //Create a function that returns heads or tails randomly and as fairly as possible. Call the function.
 function headsOrTails() {
-    return Math.random() >= 0.50 ? 'heads' : 'tails';
+    return Math.random() > 0.50 ? 'heads' : 'tails';
 }
 
 console.log(headsOrTails());
