@@ -22,6 +22,47 @@ const weather = {
 const cambridgeWeather = {};
 const somervilleWeather = {};
 
+
+function threeHoursToDays(threeHours) {
+    // iterate through threeHours every 7 elements 
+        // push as a new day object into a newArray called days 5
+        // add the date to the object
+    /* 
+    [
+        {
+            date,
+            hour,
+            weatherMain,
+            weatherDescription
+        }, 
+        {
+            date,
+            hour,
+            weatherMain,
+            weatherDescription
+        }, 
+        {
+            date,
+            hour,
+            weatherMain,
+            weatherDescription
+        }, 
+        {
+            date,
+            hour,
+            weatherMain,
+            weatherDescription
+        }, 
+        {
+            date,
+            hour,
+            weatherMain,
+            weatherDescription
+        }, 
+    ]
+    */
+}
+
 app.set('view engine', 'ejs');
 
 
