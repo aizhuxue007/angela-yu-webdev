@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <main>
+            <% for(let i = 0; i < weather.list.length; i++) { %>
+                
+                <% if ((i + 1) % 8 == 0 || i === 0) { %>
+                    <section style="color: red">
+                        <% if ((i + 1) % 7 == 0 || i === 0) { %>
+                                <div style="margin-bottom: 2em;"><%= weather.list[i].dt_txt.split(' ')[0] %><div>
+                        <% } %>
+                        <div style="margin-bottom: 2em;">
+                            <%= weather.list[i].dt_txt.split(' ')[1] %>
+                            <%= weather.list[i].weather['0'].main %>
+                            <%= weather.list[i].weather['0'].description %>
+                        </div>
+                    </section>
+                <% } %>
+            <% } %>
+        </main>
+    </body>
+</html>
