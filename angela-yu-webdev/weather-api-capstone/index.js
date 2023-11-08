@@ -22,11 +22,47 @@ const weather = {
 const cambridgeWeather = {};
 const somervilleWeather = {};
 
+function repackageThreeHours(threeHours) {
+    return threeHours.map((interval) => {
+        return {
+            date: interval.dt_txt.split(' ')[0],
+            hour: interval.dt_txt.split(' ')[1],
+            weatherMain: interval.weather['0'].main,
+            weatherDescription: interval.weather['0'].description,
+        }
+    })
+}
+
+function groupThreeHoursByDate(threeHours) {
+    let fiveDayInterval = [
+    ]
+    let prevDate = '';
+    let i = 0;
+
+    console.log('-----------------')
+    threeHours.forEach(interval => {
+        if (interval.date !== prevDate) {
+            fiveDayInterval.push([{
+                date: interval.date,
+                ...interval
+            }]);
+            i++;
+            prevDate = interval.date;
+        } else {
+            fiveDayInterval[i].push(interval);
+        }
+    })
+    return fiveDayInterval;
+}
 
 function threeHoursToDays(threeHours) {
     // iterate through threeHours every 7 elements 
         // push as a new day object into a newArray called days 5
         // add the date to the object
+    const threeHourIntervals = repackageThreeHours(threeHours);
+    const days = groupThreeHoursByDate(threeHourIntervals);
+    console.log(days);
+    return days;
     /* 
     [
         {
@@ -77,7 +113,7 @@ app.use(async (req, res, next) => {
     try {
         const resp = await axios.get(apiURL);
         cambridgeWeather.cityName = resp.data.city.name; 
-        cambridgeWeather.list = resp.data.list;
+        cambridgeWeather.list = threeHoursToDays(resp.data.list);
     } catch (error) {
         console.log(error);
     }
@@ -85,7 +121,6 @@ app.use(async (req, res, next) => {
 })
 
 app.get('/', (req, res) => {
-    console.log(cambridgeWeather.condition);
     res.render('index', { weather: cambridgeWeather });
 })
 
