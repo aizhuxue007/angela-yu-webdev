@@ -37,19 +37,26 @@ function groupThreeHoursByDate(threeHours) {
     let fiveDayInterval = [
     ]
     let prevDate = '';
-    let i = 0;
-
+    // console.log(threeHours)
     console.log('-----------------')
+    // add dates
     threeHours.forEach(interval => {
         if (interval.date !== prevDate) {
-            fiveDayInterval.push([{
+            fiveDayInterval.push({
                 date: interval.date,
-                ...interval
-            }]);
-            i++;
+                list: []
+            });
             prevDate = interval.date;
-        } else {
-            fiveDayInterval[i].push(interval);
+        } 
+    })
+    console.log(fiveDayInterval)
+    // add items by date
+    threeHours.forEach(interval => {
+        for (let i = 0; i < fiveDayInterval.length; i++) {
+            console.log(fiveDayInterval[i].date, interval.date)
+            if (fiveDayInterval[i].date == interval.date) {
+                fiveDayInterval[i].list.push(interval);
+            }
         }
     })
     return fiveDayInterval;
