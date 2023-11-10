@@ -27,6 +27,8 @@ function repackageThreeHours(threeHours) {
         return {
             date: interval.dt_txt.split(' ')[0],
             hour: interval.dt_txt.split(' ')[1],
+            temp: interval.main.temp,
+            feelsLike: interval.main.feels_like,
             weatherMain: interval.weather['0'].main,
             weatherDescription: interval.weather['0'].description,
         }
@@ -37,9 +39,7 @@ function groupThreeHoursByDate(threeHours) {
     let fiveDayInterval = [
     ]
     let prevDate = '';
-    // console.log(threeHours)
-    console.log('-----------------')
-    // add dates
+
     threeHours.forEach(interval => {
         if (interval.date !== prevDate) {
             fiveDayInterval.push({
@@ -49,70 +49,31 @@ function groupThreeHoursByDate(threeHours) {
             prevDate = interval.date;
         } 
     })
-    console.log(fiveDayInterval)
-    // add items by date
     threeHours.forEach(interval => {
         for (let i = 0; i < fiveDayInterval.length; i++) {
-            console.log(fiveDayInterval[i].date, interval.date)
             if (fiveDayInterval[i].date == interval.date) {
                 fiveDayInterval[i].list.push(interval);
             }
         }
-    })
+    });
+    
     return fiveDayInterval;
 }
 
 function threeHoursToDays(threeHours) {
-    // iterate through threeHours every 7 elements 
-        // push as a new day object into a newArray called days 5
-        // add the date to the object
     const threeHourIntervals = repackageThreeHours(threeHours);
     const days = groupThreeHoursByDate(threeHourIntervals);
-    console.log(days);
     return days;
-    /* 
-    [
-        {
-            date,
-            hour,
-            weatherMain,
-            weatherDescription
-        }, 
-        {
-            date,
-            hour,
-            weatherMain,
-            weatherDescription
-        }, 
-        {
-            date,
-            hour,
-            weatherMain,
-            weatherDescription
-        }, 
-        {
-            date,
-            hour,
-            weatherMain,
-            weatherDescription
-        }, 
-        {
-            date,
-            hour,
-            weatherMain,
-            weatherDescription
-        }, 
-    ]
-    */
 }
+
+app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
-
 app.use(async (req, res, next) => {
     let cambridge = {
-        lat: 42.37500,
-        lon: -71.10611
+        lat: 42.373611,
+        lon: -71.110558
     };
     const appID = `5900817b3e2ae15215d9e5705ae1c2df`;
     const apiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${cambridge.lat}&lon=${cambridge.lon}&appid=${appID}&units=imperial`;
@@ -128,6 +89,7 @@ app.use(async (req, res, next) => {
 })
 
 app.get('/', (req, res) => {
+    // console.log(cambridgeWeather)
     res.render('index', { weather: cambridgeWeather });
 })
 

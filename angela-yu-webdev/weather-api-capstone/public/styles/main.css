@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    padding: 1em 0;
+}
+
+.day {
+    padding: 2em;
+    border: 1px solid red;
+    border-radius: 25px;
+}
+
+.day__interval {
+    border: 2px solid blue;
+    border-radius: 25px;
+    padding: 1.5em;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 900px) {
+    .days {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+}
